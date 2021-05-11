@@ -3,10 +3,9 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom"
-
 import NavBar from './Nav/NavBar'
+import Home from './Home'
 
 
 function Main() {
@@ -15,7 +14,7 @@ function Main() {
       <NavBar />
       <Switch>
         <Route path='/'>
-
+          <Home /> 
         </Route>
         <Route path='/about'>
           
