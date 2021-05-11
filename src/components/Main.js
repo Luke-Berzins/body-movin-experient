@@ -12,6 +12,7 @@ import NavBar from './Nav/NavBar'
 function Main() {
   return (
     <Router>
+      <NavBar />
       <Switch>
         <Route path='/'>
 
