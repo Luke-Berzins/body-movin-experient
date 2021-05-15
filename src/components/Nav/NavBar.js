@@ -11,15 +11,10 @@ export default function NavBar(props) {
     }, [doctitle])
 
 
-    useEffect(() => {
-        setTimeout(() => {
-            setPlay(true)
-        }, 6000)
-    }, [play])
     
     const defaultOptions = {
-        loop: true,
-        autoplay: false,
+        loop: false,
+        autoplay: true,
         animationData: animationData,
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice'
@@ -31,8 +26,7 @@ export default function NavBar(props) {
              <Lottie options={defaultOptions}
               height={100}
               width={100}
-              isPaused={play}
-            />
+            />  
             <button
             onClick={() => setPlay(false)}
             >Hi</button>
