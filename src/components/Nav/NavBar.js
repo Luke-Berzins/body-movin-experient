@@ -5,12 +5,11 @@ import animationData from './nameSig.json'
 
 export default function NavBar(props) {
     const [doctitle, setDocTitle] = useState("Lizzy's")
-    const [play, setPlay] = useState(true)
     useEffect(() => {
         document.title = doctitle
     }, [doctitle])
 
-
+    
     
     const defaultOptions = {
         loop: false,
@@ -27,9 +26,7 @@ export default function NavBar(props) {
               height={100}
               width={100}
             />  
-            <button
-            onClick={() => setPlay(false)}
-            >Hi</button>
+            
             <ul>
                 <li>
                     <Link 
