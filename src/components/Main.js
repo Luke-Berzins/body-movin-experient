@@ -6,6 +6,7 @@ import {
 } from "react-router-dom"
 import NavBar from './Nav/NavBar'
 import Home from './Home'
+import Blog from './Blog'
 
 
 function Main() {
@@ -13,14 +14,14 @@ function Main() {
     <Router>
       <NavBar />
       <Switch>
-        <Route path='/'>
-          <Home /> 
-        </Route>
-        <Route path='/about'>
-          
+        <Route path='/blog'>
+          <Blog />
         </Route>
         <Route path='/recipes'>
           
+        </Route>
+        <Route path='/'>
+          <Home /> 
         </Route>
       </Switch>
     </Router>
